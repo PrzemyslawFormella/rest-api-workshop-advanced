@@ -5,6 +5,11 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class PostTest {
 
+    private final Post addPostBody = (Post) FileHelper.generateObjectFromResource("addPostBody.json", Post.class);
+
+
+    private final Post editPostBody = (Post) FileHelper.generateObjectFromResource("editPostBody.json", Post.class);
+
     @Test
     public void addPostTest() {
         Post post = new Post();
